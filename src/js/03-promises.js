@@ -9,11 +9,9 @@ function createPromise(position, delay) {
     setTimeout(() => {
       if (shouldResolve) {
         // Fulfill
-
         resolve({ position, delay });
       } else {
         // Reject
-
         reject({ position, delay });
       }
     }, delay);
